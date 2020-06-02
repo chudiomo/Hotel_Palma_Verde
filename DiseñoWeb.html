@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Agroturistico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/palma.png">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+  </head>
+  <body bgcolor="#F3FFED">
+    <div name="menu">
+      <ul class="main_menu">
+        <li class="main_menu__item"><a class="main_menu__link" href="">INICIO</a></li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">NUESTRO HOTEL</a>
+          <ul class="main_menu__menu">
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SERVICIOS</a></li>
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">NUESTRO EQUIPO</a></li>
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">OPINIONES</a></li>
+          </ul>
+        </li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">CABAÑAS</a>
+          <ul class="main_menu__menu">
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SIMPLE</a></li>
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">DOBLE</a></li>
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">FAMILIAR</a></li>
+          </ul>
+        </li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">SALONES DE EVENTOS</a>
+          <ul class="main_menu__menu">
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SALON GRANDE</a></li>
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SALON MEDIANO</a></li>
+            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SALON PEQUEÑO</a></li>
+          </ul>
+        </li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">PLANES</a></li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">PROMOCIONES</a></li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">RESERVA AHORA</a></li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">CONTACTENOS</a></li>
+        <li class="main_menu__item"><a class="main_menu__link" href="">FOTOS</a></li>
+      </ul>
+    </div>
+    <br>
+    <div id="tituloPrincipal">
+      <h1>PALMA VERDE <br> HOTEL CAMPESTRE </h1>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="imagenes/imagen1.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="imagenes/imagen2.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="imagenes/imagen3.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="imagenes/imagen4.jpeg" alt=""></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <div>
+      <div>
+        <p>Finca agroturistica ubicada en la vereda la poyata- km 5 via restrepo. Cuenta con 23 cabañas disponibles con capacidad de alojamiento de mas de 100 personas en sus instalaciones. Por otro lado cuenta tambien con servicios adicionales de restaurante, aire acondicionado, bar , piscina entre muchos otros al igual que un personal idoneo para atenderle. Precios desde 60.000 pesos en adelante.</p>
+      </div>
+    </div>
+  </body>
+</html>

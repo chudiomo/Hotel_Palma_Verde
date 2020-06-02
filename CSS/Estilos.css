@@ -1,0 +1,76 @@
+body
+*{
+  padding: 0px;
+  margin: 0px; /*espacio esterior al borde*/
+}
+#menu{
+  margin: auto; /* espacio esterior al vorde automatico*/
+  width: 2000px; /*establece la anchura del elemento*/
+  font-family: sans-serif;/*tipo de letra*/
+}
+ul, ol{
+  list-style: none;/*elimina la numeracion y viñetas de nuestras listas*/
+}
+.main_menu li a{
+  background-color: #D9FDF5;
+  color: black;
+  text-decoration: none;
+  padding: 10px 24px;/*espacio entre el borde del elemento y su contenido*/
+  display: block;/*en bloque*/
+}
+.main_menu li a:hover{
+  background-color: #9FE5D6;/*hover nos permite un estilo de enlace traslucido sobre el que esta pasando el raton del mouse*/
+}
+.main_menu > li {
+  float: left;
+}
+.main_menu li ul{
+  display: none;
+  position: absolute;
+  min-width: 110px;/*anchura del elemento*/
+}
+.main_menu li:hover ul{
+  display: block;/*bloque*/
+}
+#tituloPrincipal{
+  color: black;/*cambia el color del titulo*/
+  font-size: 40px;/*cambia el tamaño del tilulo*/
+  text-align: center;/*centra el texto*/
+  margin-top: 60px;/*espacio entre la caja del titulo y la margen superior*/
+
+}
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
