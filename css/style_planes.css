@@ -1,0 +1,176 @@
+/* *{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #D4D4D4;
+	font-family: 'Open sans';
+} */
+.title1{
+	width: 100%;
+	max-width:90% ;
+	margin: 0px auto;
+	text-align: center;
+}
+.title1 h1{
+	padding-top: 50px;
+	margin: 0;
+}
+.title1 p{
+	margin: 0;
+	padding-bottom: 30px;
+}
+.wrap{
+	width: 100%;
+	max-width: 90%;
+	margin: 0px auto;
+}
+.secciones_titlePrincipal{
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 0;
+}
+.secciones_subtitle {
+	text-align: center;
+	padding-bottom: 70px;
+}
+.secciones_title{
+	letter-spacing: 1px;
+}
+.secciones_titlePhone{
+	visibility: hidden;
+	display: none;
+}
+.secciones_container_img{
+	width: 350px;
+	height: 300px;
+	float: left;
+	display: block;
+	background-size: 100% 100%;
+	border-radius: 10px;
+	margin: 0 10px 10px 10px;
+	padding: 10px;
+	border: 2px solid #5d5858;
+}
+.parrafo{
+	padding-bottom: 250px;
+	border-bottom: 3px solid #8b7878;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa{
+	visibility:hidden;
+	display: none;
+
+}
+ul.tabs{
+	width: 100%;
+	background: #363636;
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+ul.tabs li{
+	width: 100%;
+}
+
+ul.tabs li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;/*tamaño de la letra*/
+	text-align: center;
+	display: block;
+	padding: 10px 0 ;/*tamañp del padding de las letras*/
+}
+
+.active{
+	background: #0984CC;/*color del tap que esta seleccionado*/
+}
+
+ul.tabs li a .tab-text{
+	display: block;
+	margin-left: 0;/*lo que me separa del icono delos taps*/
+}
+
+.secciones{
+	width: 100%;
+	height: 2500px;/*tamaño vertical */
+	background: #fff;
+	margin-bottom: 50px;
+}
+
+.secciones article{
+	padding: 30px;
+}
+
+/* .secciones article {
+	text-align: justify;
+} */
+
+
+@media screen and (max-width: 700px){
+	ul.tabs li{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.secciones_title{
+		visibility: hidden;
+		display: none;
+	}
+	.secciones_titlePhone{
+		visibility: visible;
+		display: block;
+		text-align: center;
+	}
+	.fa{
+		visibility: visible;
+		display: block;
+	}
+	ul.tabs{
+		background: #7e7a7a;
+	}
+	ul.tabs li a{
+		padding: 15px 0px;
+	}
+
+	ul.tabs li a .tab-text{
+		display: none;
+	}
+	.secciones{
+		width: 100%;
+		height: 3700px;
+
+	}
+	.secciones article{
+		padding: 20px;
+	}
+	.parrafo{
+		padding-bottom: 40px;
+		border-bottom: 1px solid #8b7878;
+	}
+	.secciones_container_img{
+		float: none;
+		width: 300px;
+		height: 300px;
+	}
+}

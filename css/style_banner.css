@@ -1,0 +1,66 @@
+.banner{
+  width: 100%; /*ancho*/
+  height:500px;/*alto */
+  animation: banner 10s infinite linear alternate;/*animacion de timpo, infinite, lineal, altenativa*/
+  background-size: 100% 100%;/*ajustar el tamaño al 100% de alto y 100% de ancho*/
+  position: relative; /*"relative" para haci poner el banner en "absolute" y que no se mueva para ninguna direccion: */
+  display: flex;/*para que la caja sea flecible y haci poder mover el contenido del banner*/
+  justify-content: center;/*para centrar el contenido del banner horizontalmente*/
+  align-items: center;/*para centrar el contenido del baner verticalmente*/
+  margin-top: 148px;
+}
+@keyframes banner { /*para la animacion del banner*/
+  0%, 20%{
+    background-image: url(../imagenes/banner.jpeg);
+  }
+  25%, 45%{
+    background-image: url(../imagenes/banner2.jpeg);
+  }
+  50%, 70%{
+    background-image: url(../imagenes/banner3.jpeg);
+  }
+  75%, 100%{
+    background-image: url(../imagenes/banner4.jpeg);
+  }
+
+}
+.capa{ /*capa que va encima del baner*/
+  width: 100%;/*ancho*/
+  height: 100%;/*alto*/
+  position: absolute;/*para que el contenido no se mueva */
+  top: 0; /*para que no tenga margen ariba*/
+  left: 0;/*para que este pegada al lado izquierdo*/
+  background: rgba(0, 0, 0, 0.5);/*color de la capa rojo,verde,azul,trasparente*/
+
+}
+.info{
+  z-index: 1;/*para poner encima del otro contenedor*/
+  width: 100%;/*ancho*/
+  max-width: 550px;/*maximo tamaño*/
+  text-align: center;/*centrar el texto*/
+
+}
+.info h1{
+  color: #fff;/*color*/
+  font-size: 45px;/*tamaño de letra*/
+  margin-bottom: 20px;/*margen abajo, para empujar el texto de abajo*/
+  letter-spacing: 1px;/*espacios entre las letras*/
+}
+.info p{
+  color: #c7c7c7;/*color de texto*/
+  line-height: 1.7;/*separa las lineas "filas" del texto*/
+  margin-bottom: 30px;/*margen abajo*/
+}
+.info a{
+  color: #fff;/*color del texto*/
+  text-decoration: none;/*para quitar la linea del link*/
+  background: blue;/*color de la caja "fondo"*/
+  padding: 16px 37px;/*tamaño del relleno*/
+  display: inline-block;/*para que dependa de el mismo*/
+  border-radius: 50px;/*borde de las esquinas*/
+}
+@media screen and (max-width: 700px){
+  .banner{
+    margin-top: 111px;
+  }
+}

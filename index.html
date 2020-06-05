@@ -2,86 +2,85 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hotel Agroturistico</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/palma.png">
+    <title>Hotel Camapestre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.jpg">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/Estilos.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style_banner.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
   </head>
   <body>
-    <div name="menu">
-      <ul class="main_menu">
-        <li class="main_menu__item"><a class="main_menu__link" href="">INICIO</a></li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">NUESTRO HOTEL</a>
-          <ul class="main_menu__menu">
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="servicios.html">SERVICIOS</a></li>
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">NUESTRO EQUIPO</a></li>
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">OPINIONES</a></li>
-          </ul>
-        </li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">CABAÑAS</a>
-          <ul class="main_menu__menu">
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SIMPLE</a></li>
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">DOBLE</a></li>
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">FAMILIAR</a></li>
-          </ul>
-        </li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">SALONES DE EVENTOS</a>
-          <ul class="main_menu__menu">
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SALON GRANDE</a></li>
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SALON MEDIANO</a></li>
-            <li class="main_menu__menu__item"><a class="main_menu__menu__link" href="">SALON PEQUEÑO</a></li>
-          </ul>
-        </li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">PLANES</a></li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">PROMOCIONES</a></li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">RESERVA AHORA</a></li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">CONTACTENOS</a></li>
-        <li class="main_menu__item"><a class="main_menu__link" href="">FOTOS</a></li>
-      </ul>
-    </div>
-    <br>
-    <div id="tituloPrincipal">
-      <h1>PALMA VERDE <br> HOTEL CAMPESTRE </h1>
-    </div>
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="imagenes/imagen1.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="imagenes/imagen2.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="imagenes/imagen3.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="imagenes/imagen4.jpeg" alt=""></div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-
-    <!-- Swiper JS -->
-    <script src="js/swiper.min.js"></script>
-
-    <!-- Initialize Swiper -->
+    <header class="header__menu">
+      <nav id="menu">
+        <div class="logo">
+          <div class="">
+            <a href="index.html"><img class="logo__img"href="#"src="imagenes/logo.png"></a>
+          </div>
+        </div>
+        <label for="btn" class="icon">
+        <span class="fa fa-bars"><img id="iconoMenu" src="imagenes/menu.png"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul class="main_menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li>
+            <label for="btn-1" class="show">NUESTRO HOTEL +</label>
+            <a>NUESTRO HOTEL</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+              <li><a href="servicios.html">SERVICIOS</a></li>
+              <li><a href="#">NUESTRO EQUIPO</a></li>
+              <li><a href="#">OPINIONES</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">CABAÑAS +</label>
+            <a>CABAÑAS</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+              <li><a href="">SIMPLE</a></li>
+              <li><a href="">DOBLE</a></li>
+              <li><a href="">FAMILIAR</a></li>
+            </ul>
+          </li>
+          <li><a href="planes.html">PLANES</a></li>
+          <li><a href="">PROMOCIONES</a></li>
+          <li><a href="">RESERVA AHORA</a></li>
+          <li><a href="">CONTACTENOS</a></li>
+          <li><a href="">FOTOS</a></li>
+        </ul>
+      </nav>
+    </header>
     <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+    $('.icon').click(function(){
+      $('span').toggleClass("cancel");
+    });
     </script>
-    <div>
-      <div>
-        <p>Finca agroturistica ubicada en la vereda la poyata- km 5 via restrepo. Cuenta con 23 cabañas disponibles con capacidad de alojamiento de mas de 100 personas en sus instalaciones. Por otro lado cuenta tambien con servicios adicionales de restaurante, aire acondicionado, bar , piscina entre muchos otros al igual que un personal idoneo para atenderle. Precios desde 60.000 pesos en adelante.</p>
+    <div class="banner">
+      <div class="capa"></div>
+      <div class="info">
+        <h1>Bienvenidos <br>Al Hotel <br> Palma Verde</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore distinctio corrupti consequuntur amet saepe, laudantium unde ad aspernatur in voluptas.</p>
+        <a href="#">Leer mas</a>
       </div>
+    </div>
+    <div class="hola">
+      <h1 class="tituloPrincipal"></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </body>
 </html>
