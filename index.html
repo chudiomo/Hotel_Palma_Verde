@@ -3,84 +3,267 @@
   <head>
     <meta charset="utf-8">
     <title>Hotel Camapestre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.jpg">
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet"  href="css/style_menu.css">
     <link rel="stylesheet" href="css/style_banner.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
-    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/style_principal.css">
   </head>
-  <body>
+  <body class="bodyPincipal">
+    <!-- menu principal -->
     <header class="header__menu">
       <nav id="menu">
         <div class="logo">
           <div class="">
-            <a href="index.html"><img class="logo__img"href="#"src="imagenes/logo.png"></a>
+            <a href="index.html"><img class="logo__img" src="imagenes/logo.png"></a>
           </div>
         </div>
         <label for="btn" class="icon">
-        <span class="fa fa-bars"><img id="iconoMenu" src="imagenes/menu.png"></span>
+        <span><!--clase del span class="fa fa-bars"--><img id="iconoMenu" src="imagenes/menu.png"></span>
         </label>
         <input type="checkbox" id="btn">
         <ul class="main_menu">
           <li><a href="index.html">INICIO</a></li>
           <li>
             <label for="btn-1" class="show">NUESTRO HOTEL +</label>
-            <a>NUESTRO HOTEL</a>
+            <a href="#nuestroHotel">NUESTRO HOTEL</a>
             <input type="checkbox" id="btn-1">
             <ul>
               <li><a href="servicios.html">SERVICIOS</a></li>
-              <li><a href="#">NUESTRO EQUIPO</a></li>
-              <li><a href="#">OPINIONES</a></li>
+              <li><a href="equipo.html">NUESTRO EQUIPO</a></li>
+              <li><a href="opiniones.html">OPINIONES</a></li>
             </ul>
           </li>
           <li>
             <label for="btn-2" class="show">CABAÑAS +</label>
-            <a>CABAÑAS</a>
+            <a href="#cabañas">CABAÑAS</a>
             <input type="checkbox" id="btn-2">
             <ul>
-              <li><a href="">SIMPLE</a></li>
-              <li><a href="">DOBLE</a></li>
-              <li><a href="">FAMILIAR</a></li>
+              <li><a href="cabañas.html">SIMPLE</a></li>
+              <li><a href="cabañas.html">DOBLE</a></li>
+              <li><a href="cabañas.html">FAMILIAR</a></li>
             </ul>
           </li>
           <li><a href="planes.html">PLANES</a></li>
-          <li><a href="">PROMOCIONES</a></li>
-          <li><a href="">RESERVA AHORA</a></li>
-          <li><a href="">CONTACTENOS</a></li>
-          <li><a href="">FOTOS</a></li>
+          <li><a href="promociones.html">PROMOCIONES</a></li>
+          <li><a href="reserva.html">RESERVA AHORA</a></li>
+          <li><a href="contactenos.html">CONTACTENOS</a></li>
+          <li><a href="fotos.html">FOTOS</a></li>
         </ul>
       </nav>
     </header>
-    <script>
-    $('.icon').click(function(){
-      $('span').toggleClass("cancel");
-    });
-    </script>
-    <div class="banner">
-      <div class="capa"></div>
-      <div class="info">
-        <h1>Bienvenidos <br>Al Hotel <br> Palma Verde</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore distinctio corrupti consequuntur amet saepe, laudantium unde ad aspernatur in voluptas.</p>
-        <a href="#">Leer mas</a>
+    <!-- slider principal y en la parte final esta el link a Nuestro Hotel -->
+    <div class="container">
+      <div class="container-all">
+
+        <input type="radio" id="1" name="image-slide" hidden/>
+        <input type="radio" id="2" name="image-slide" hidden/>
+        <input type="radio" id="3" name="image-slide" hidden/>
+        <input type="radio" id="4" name="image-slide" hidden/>
+        <input type="radio" id="5" name="image-slide" hidden/>
+
+        <div class="slide">
+
+          <div class="item-slide">
+            <div class="imagenBanner">
+              <img src="imagenes/banner/img1.jpeg">
+              <div class="info">
+                <h1>Bienvenidos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error facere esse provident repellendus <p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-slide">
+            <div class="imagenBanner">
+              <img src="imagenes/banner/img2.jpeg">
+              <div class="info">
+                <h1>Bienvenidos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error facere esse provident repellendus <p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-slide">
+            <div class="imagenBanner"><img src="imagenes/banner/img3.jpeg">
+              <div class="info">
+                <h1>Bienvenidos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error facere esse provident repellendus <p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-slide">
+            <div class="imagenBanner"><img src="imagenes/banner/img4.jpeg">
+              <div class="info">
+                <h1>Bienvenidos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error facere esse provident repellendus <p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-slide">
+            <div class="imagenBanner"><img src="imagenes/banner/img5.jpeg">
+              <div class="info">
+                <h1>Bienvenidos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error facere esse provident repellendus <p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pagination">
+
+          <label class="pagination-item" for="1">
+            <img src="imagenes/banner/img1.jpeg">
+          </label>
+
+          <label class="pagination-item" for="2">
+            <img src="imagenes/banner/img2.jpeg">
+          </label>
+
+          <label class="pagination-item" for="3">
+            <img src="imagenes/banner/img3.jpeg">
+          </label>
+
+          <label class="pagination-item" for="4">
+            <img src="imagenes/banner/img4.jpeg">
+          </label>
+
+          <label class="pagination-item" for="5">
+            <img src="imagenes/banner/img5.jpeg">
+          </label>
+
+        </div>
       </div>
+      <div class="linkNuestroHotel"><a name="nuestroHotel"></a></div>
     </div>
-    <div class="hola">
-      <h1 class="tituloPrincipal"></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="tituloNuestrohotel">
+      <h1>NUESTRO HOTEL</h1>
     </div>
+    <div class="subtitle">
+      <h2><a href="servicios.html">Servicios</a></h2>
+    </div>
+    <!-- slider de SERVICIOS y al final link de CABAÑAS -->
+    <div class="contenedorCarrousel">
+      <div class="content-all">
+        <div class="content-carrousel">
+
+          <figure>
+            <!-- <img class="imgServicios" src="imagenes/folder/img1.jpeg"> -->
+            <div class="imagen" style="background-image:url(imagenes/sliderServicios/img1.jpeg)">
+              <div class="infoServicios">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</p>
+
+              </div>
+            </div>
+          </figure>
+          <figure>
+            <!-- <img src="imagenes/folder/img13.jpeg"> -->
+            <div class="imagen"style="background-image:url(imagenes/sliderServicios/img2.jpeg)">
+              <div class="infoServicios">
+                <h1>Salones De Eventos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</p>
+              </div>
+            </div>
+          </figure>
+          <figure>
+            <!-- <img src="imagenes/folder/img3.jpeg"> -->
+            <div class="imagen"style="background-image:url(imagenes/sliderServicios/img3.jpeg)">
+              <div class="infoServicios">
+                <h1>Shou Ecuestre</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</p>
+              </div>
+            </div>
+          </figure>
+          <figure>
+            <!-- <img src="imagenes/folder/img4.jpeg"> -->
+            <div class="imagen"style="background-image:url(imagenes/sliderServicios/img4.jpeg)">
+              <div class="infoServicios">
+                <h1>Restaurante y Bar</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</p>
+              </div>
+            </div>
+          </figure>
+          <figure>
+            <!-- <img src="imagenes/folder/img5.jpeg"> -->
+            <div class="imagen"style="background-image:url(imagenes/sliderServicios/img5.jpeg)">
+              <div class="infoServicios">
+                <h1>Zonas Humedas</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</p>
+              </div>
+            </div></figure>
+          <!-- <figure><img src="imagenes/folder/img6.jpeg"></figure>
+          <figure><img src="imagenes/folder/img7.jpeg"></figure>
+          <figure><img src="imagenes/folder/img8.jpeg"></figure>
+          <figure><img src="imagenes/folder/img9.jpeg"></figure>
+          <figure><img src="imagenes/folder/img10.jpeg"></figure> -->
+        </div>
+      </div>
+      <div class="linkCabañas"><a href="#" name="cabañas"></a></div>
+    </div>
+    <div class="tituloNuestrohotel">
+      <!-- <a name="cabañas"></a> -->
+      <h1>CABAÑAS</h1>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img1.jpg)">
+          <h1>Cabaña simple</h1>
+        </div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img2.jpg)">
+          <h1>Cabaña Doble</h1>
+        </div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img3.jpg)">
+          <h1>Cabaña Familiar</h1>
+        </div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img4.jpg)">
+
+        </div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img5.jpg)">
+
+        </div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img6.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img7.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img8.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img9.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagenes/sliderCabañas/img10.jpg)"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows : true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+  	<script src="js/menu1.js"></script>
+
+
+
+    </script>
   </body>
 </html>

@@ -1,15 +1,16 @@
-/* *{
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+p{
+	font-family: 'Roboto', sans-serif;
 }
-
-body{
-	background: #D4D4D4;
-	font-family: 'Open sans';
-} */
+h1{
+	font-family: 'Farsan', cursive;
+}
+h2{
+	margin: 0;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-family: 'Arima Madurai', cursive;
+}
 .title1{
 	width: 100%;
 	max-width:90% ;
@@ -29,6 +30,7 @@ body{
 	max-width: 90%;
 	margin: 0px auto;
 }
+
 .secciones_titlePrincipal{
 	text-align: center;
 	letter-spacing: 1px;
@@ -59,14 +61,8 @@ body{
 .parrafo{
 	padding-bottom: 250px;
 	border-bottom: 3px solid #8b7878;
+	text-align: justify;
 }
-
-
-
-
-
-
-
 
 
 
@@ -132,7 +128,7 @@ ul.tabs li a .tab-text{
 	}
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
 	.tabsIcono{
 		width: 25px;
 		height: 100%;
@@ -171,10 +167,14 @@ ul.tabs li a .tab-text{
 	.parrafo{
 		padding-bottom: 40px;
 		border-bottom: 1px solid #8b7878;
+		display: block;
 	}
 	.secciones_container_img{
 		float: none;
-		width: 300px;
-		height: 300px;
+		width: 260px;
+		height: 220px;
+		margin: 0 auto;
+
 	}
+
 }

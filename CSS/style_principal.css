@@ -1,0 +1,233 @@
+.bodyPincipal {
+  background: #F3FFED;
+}
+h1{
+    font-family: 'Farsan', cursive;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+/*titutulo nuestro hotel*/
+.linkNuestroHotel{
+  margin-top: 200px;
+}
+.tituloNuestrohotel{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Farsan', cursive;
+  color: #378c22;
+  text-shadow: 0px 0px 6px green;/*poner sombra al texto*/
+}
+/*titulo de SERVICIOS*/
+.subtitle {
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+.subtitle h2{
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+
+}
+.subtitle h2::after, .subtitle h2::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #24bb0f;
+  top: 25px;
+}
+.subtitle h2::after{
+  left: 175px;
+}
+.subtitle h2::before{
+  right: 175px;
+}
+.subtitle a{
+  padding: 0 10px;
+  margin: -1px 0 0 0;
+  text-decoration: none;
+  color: #24bb0f;
+}
+.subtitle a:hover{
+ color: #0f883c;
+ border-radius: 50px;
+ border: 1px solid #0f883c;
+ background: #30d56d;
+}
+
+/*texto de servicios*/
+.imagen{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  flex-direction: column;
+  text-align: center;
+}
+.infoServicios{
+  text-align: center;
+  color: black;
+}
+.infoServicios h1{
+  font-size: 20px;
+}
+.infoServicios p{
+  margin: 10px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* slider de SERVICIOS */
+.contenedorCarrousel{
+  display: flex;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+}
+  .content-all{
+  width: 23%;
+  margin: auto;
+  perspective: 100%;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  }
+
+    .content-carrousel{
+      width: 100%;
+      position: absolute;
+      animation: rotar 10s infinite linear;
+      transform-style: preserve-3d;
+      display: block;
+      justify-content: center;/*para centrar el contenido del banner horizontalmente*/
+      align-items: center; /*para centrar el contenido del baner verticalmente*/
+    }
+
+      .content-carrousel:hover{
+        animation-play-state: paused;
+        cursor: pointer;
+      }
+
+      .content-carrousel figure{
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        position: absolute;
+        box-shadow: 0px 0px 20px 0px black;
+        transition: all 300ms;
+      }
+
+      .content-carrousel figure:hover{
+        box-shadow: 0px 0px 0px 0px black;
+        transition: all 300ms;
+        /* visibility:visible; */
+      }
+      /* .content-carrousel p:hover{
+      } */
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(250px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(72deg) translateZ(250px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(144deg) translateZ(250px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(216deg) translateZ(250px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(288deg) translateZ(250px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(360deg) translateZ(250px);}
+/* .content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);} */
+/* .content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);} */
+/* .content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);} */
+/* .content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);} */
+
+.content-carrousel img{
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+
+@keyframes rotar{
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+  }
+}
+@media all and (max-width: 800px){
+  .tituloNuestrohotel{
+    font-size: 15px;
+  }
+  .subtitle h2::after, .subtitle h2::before{
+    width: 60px;
+    height: 2px;
+  }
+  .subtitle h2::after{
+    left: 205px;
+  }
+  .subtitle h2::before{
+    right: 205px;
+  }
+  .contenedorCarrousel{
+    height: 250px;
+  }
+  .content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 10px;
+  }
+  .content-carrousel figure{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+
+  }
+  .content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(150px);}
+  .content-carrousel figure:nth-child(2){transform: rotateY(72deg) translateZ(150px);}
+  .content-carrousel figure:nth-child(3){transform: rotateY(144deg) translateZ(150px);}
+  .content-carrousel figure:nth-child(4){transform: rotateY(216deg) translateZ(150px);}
+  .content-carrousel figure:nth-child(5){transform: rotateY(288deg) translateZ(150px);}
+  .content-carrousel figure:nth-child(6){transform: rotateY(360deg) translateZ(150px);}
+
+  .infoServicios{
+    text-align: center;
+    color: black;
+  }
+  .infoServicios h1{
+    font-size: 20px;
+  }
+  .infoServicios p{
+    margin: 10px;
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+/* estilos del slider las cabañas */
+.linkCabañas{
+  display: block;
+  margin-top:170px;/*entre menos px lo tapa el menu*/
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
+}
